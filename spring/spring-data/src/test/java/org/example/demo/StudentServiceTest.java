@@ -18,11 +18,11 @@ public class StudentServiceTest {
     private StudentRepo studentRepo;
 
     @Test
-    @DisplayName("Test UnexpectedRollbackException")
+    @DisplayName("can throw UnexpectedRollbackException with nested class throwing RuntimeException")
     public void testUpdateStudentWithNestedException(){
         this.studentRepo.save(new Student());
-        Assertions.assertThrows(UnexpectedRollbackException.class, () -> {
-            studentService.updateStudentWithNestedException();
-        });
+        Assertions.assertThrows(UnexpectedRollbackException.class, () ->
+                studentService.updateStudentWithNestedException()
+        );
     }
 }
