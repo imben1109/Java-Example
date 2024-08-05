@@ -1,4 +1,4 @@
-package org.example.demo;
+package org.example.demo.service;
 
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;

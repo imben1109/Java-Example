@@ -1,5 +1,8 @@
 package org.example.demo;
 
+import org.example.demo.model.Student;
+import org.example.demo.reposity.StudentRepo;
+import org.example.demo.service.StudentService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

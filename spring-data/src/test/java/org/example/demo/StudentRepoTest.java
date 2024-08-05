@@ -1,5 +1,9 @@
 package org.example.demo;
 
+import org.example.demo.model.Student;
+import org.example.demo.model.StudentReport;
+import org.example.demo.reposity.StudentRepo;
+import org.example.demo.reposity.StudentReportRepo;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

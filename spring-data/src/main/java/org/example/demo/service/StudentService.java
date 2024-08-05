@@ -1,7 +1,10 @@
-package org.example.demo;
+package org.example.demo.service;
 
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
+import org.example.demo.model.Student;
+import org.example.demo.reposity.StudentRepo;
+import org.example.demo.service.SomeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
