@@ -1,28 +1,29 @@
 package org.example.demo.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 @Setter
 @Getter
+@Builder
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @ToString
-public class StudentReport {
+public class ExerciseBook {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    // Bi-directional OneToMany/ManyToOne Relationship
-    // JoinColumn means the owning side is this class
-    @ManyToOne
-    @JoinColumn(name = "student_id")
-    private Student student;
-
+    @Column(name = "student_name")
+    private String studentName;
 }

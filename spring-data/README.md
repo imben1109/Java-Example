@@ -4,6 +4,8 @@
 
 ## UnexpectedRollbackException
 
+## Bidirectional and Unidirectional
+
 ## Owning Side
 Every Bidirectional relationship must have one owning side.
 Whenever a bidirectional association is formed, 
